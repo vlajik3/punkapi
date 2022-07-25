@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/punkapi/static/css/main.30055bf8.css",
+    "main.js": "/punkapi/static/js/main.6b31d64c.js",
+    "index.html": "/punkapi/index.html",
+    "main.30055bf8.css.map": "/punkapi/static/css/main.30055bf8.css.map",
+    "main.6b31d64c.js.map": "/punkapi/static/js/main.6b31d64c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30055bf8.css",
+    "static/js/main.6b31d64c.js"
+  ]
+}
