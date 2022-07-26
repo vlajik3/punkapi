@@ -1,11 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import MyButton from "./UI/button/MyButton";
 
 const BeerItem = ({ beer }) => {
     let navigate = useNavigate();
     return (
-        <div className="beer">
+        <div className="beer" onClick={() => navigate(`/beer/${beer.id}`)}>
+            <div className="beer__image">
+                <img src={beer.image_url} alt="beer_image" />
+            </div>
             <div
                 className="beer__content"
                 onClick={(e) => {
@@ -13,15 +15,12 @@ const BeerItem = ({ beer }) => {
                     navigate(`/beer/${beer.id}`);
                 }}
             >
-                <strong>
-                    {beer.id}. {beer.name}
-                </strong>
-                <div className="beer__body">{beer.description}</div>
-            </div>
-            <div className="beer__btns">
-                <MyButton onClick={() => navigate(`/beer/${beer.id}`)} className="beer__btn">
-                    Открыть
-                </MyButton>
+                <h2>{beer.name}</h2>
+                <div className="beer__body">
+                    {beer.tagline.length >= 140
+                        ? beer.tagline.slice(139, beer.tagline.length) + "..."
+                        : beer.tagline}
+                </div>
             </div>
         </div>
     );

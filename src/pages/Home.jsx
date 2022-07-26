@@ -13,14 +13,14 @@ function Home() {
     const [beer, setBeer] = useState([]);
     const [filter, setFilter] = useState({ sort: "", query: "" });
     const [totalPages, setTotalPages] = useState(0);
-    const [limit, setLimit] = useState(10);
+    const [limit, setLimit] = useState(5);
     const [page, setPage] = useState(1);
     const SortedAndSearchedBeer = useBeer(beer, filter.sort, filter.query);
     const lastElement = useRef();
     const [fetchBeer, isBeerLoading, beerError] = useFetching(async () => {
         const response = await BeerService.getAll(limit, page);
         setBeer([...beer, ...response.data]);
-        const totalCount = response.headers["x-total-count"];
+        const totalCount = 68;
         setTotalPages(getPageCount(totalCount, limit));
     });
 
@@ -42,7 +42,7 @@ function Home() {
                     <Loader />
                 </div>
             )}
-            <BeerList beer={SortedAndSearchedBeer} title="Beer sea" />
+            <BeerList beer={SortedAndSearchedBeer} />
             <div ref={lastElement} style={{ height: 20, background: "transparent" }} />
         </div>
     );
