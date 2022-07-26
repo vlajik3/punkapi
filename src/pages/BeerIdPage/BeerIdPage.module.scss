@@ -1,0 +1,77 @@
+.back_button {
+    margin-right: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #24243e;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0px 5px 22px 5px rgba(34, 60, 80, 0.2);
+
+     @media screen and (max-width: 500px) {
+        padding: 15px 30px;
+    }
+    
+
+    &:hover {
+        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    }
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+	width: 100%;
+
+    img {
+        margin: 15px;
+        max-width: 30%;
+        max-height: 445px;
+    }
+
+    h1 {
+        margin: 15px;
+        font-size: 65px;
+    }
+
+    h4 {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .tagline {
+        background: #b92b27;
+        background: -webkit-linear-gradient(to right, #b92b27, #1565c0); 
+        background: linear-gradient(to right, #b92b27, #1565c0)
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+        color: #302b63;
+        background: #A1FFCE;
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+    }
+    
+    .abv {
+        background: #0f0c29;
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    }
+
+    .food_pairing {
+        padding: 15px;
+        color: #302b63;
+        list-style-type: none;
+        font-size: 25px;
+        background: #A1FFCE;
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+
+    }
+}

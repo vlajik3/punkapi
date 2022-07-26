@@ -1,5 +1,5 @@
 import React from "react";
-import BeerItem from "./BeerItem";
+import BeerItem from "./BeerItem/BeerItem";
 
 const BeerList = ({ beer }) => {
     if (!beer.length) {
@@ -7,11 +7,11 @@ const BeerList = ({ beer }) => {
     }
 
     return (
-        <div className="beer_list">
+        <>
             {beer.map((item, index) => (
-                <BeerItem number={index + 1} beer={item} />
+                <BeerItem key={item.name} number={index + 1} beer={item} />
             ))}
-        </div>
+        </>
     );
 };
 

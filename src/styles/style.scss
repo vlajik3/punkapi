@@ -5,6 +5,7 @@
     backface-visibility: hidden;
     font-family: "Roboto", sans-serif;
 }
+
 body {
     background-color: #fbab7e;
     background-image: linear-gradient(90deg, #fbab7e 0%, #f7ce68 100%);
@@ -14,96 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.beer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid rgba(102, 138, 81, 0.842);
-    margin-top: 15px;
-    max-width: 90vw;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-
-    .beer__body {
-        max-width: 95%;
-    }
-
-    .beer__image {
-        transform: rotate(-30deg);
-        transition: 0.5s;
-        img {
-            width: 30%;
-        }
-    }
-
-    .beer__content {
-        width: 30%;
-        text-align: center;
-
-        h2 {
-            transition: 0.5s;
-            font-size: 25px;
-        }
-    }
-
-    &:hover {
-        cursor: pointer;
-        border-radius: 20px;
-        background-color: #d9afd9;
-        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
-        backface-visibility: hidden;
-        box-shadow: 0px 5px 21px 19px rgba(34, 60, 80, 0.2);
-
-        .beer__image {
-            transform: rotate(30deg);
-            transition: 0.5s;
-        }
-        h2 {
-            margin-bottom: 10px;
-        }
-    }
-}
-
-.page__wrapper {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.page {
-    padding: 10px;
-    border: 1px solid teal;
-    cursor: pointer;
-    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
-}
-
-.page__current {
-    border: 2px solid orange;
-    background: rgba(255, 166, 0, 0.336);
-    font-weight: bold;
-}
-
-.navbar {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #8bc6ec;
-    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    color: #df6925;
-    box-shadow: 0px 5px 10px 1px rgba(34, 60, 80, 0.6);
-}
-
-.beer_id_page {
-    text-align: center;
 }
 
 ::-webkit-scrollbar {

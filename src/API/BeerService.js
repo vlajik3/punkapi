@@ -3,8 +3,8 @@ import axios from "axios";
 export default class BeerService {
     static async getCount() {
         const response = await axios.get("https://api.punkapi.com/v2/beers");
-        console.log("RESP " + response);
-        return response.data;
+        // console.log(response.data.length);
+        return response.data.length;
     }
 
     static async getAll(limit = 10, page = 1) {
@@ -13,8 +13,8 @@ export default class BeerService {
                 page: page,
                 per_page: limit,
             },
+
         });
-        console.log(response);
         return response;
     }
 

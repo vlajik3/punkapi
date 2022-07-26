@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import s from "./Navbar.module.scss"
 
 const Navbar = () => {
 
     return (
-        <div className="navbar">
-            <h1>Beer types</h1>
+        <div className={s.navbar}>
+            <h1><Link to="/" className={s.link}>Beer types</Link></h1>
         </div>
     );
 };

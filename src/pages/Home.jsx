@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BeerFilter from "../components/BeerFilter";
-import BeerList from "../components/BeerList";
+import BeerList from "../components/BeerList/BeerList";
 import { useBeer } from "../hooks/useBeer";
 import BeerService from "../API/BeerService";
 import Loader from "../components/UI/loader/Loader";
@@ -20,7 +20,7 @@ function Home() {
     const [fetchBeer, isBeerLoading, beerError] = useFetching(async () => {
         const response = await BeerService.getAll(limit, page);
         setBeer([...beer, ...response.data]);
-        const totalCount = 68;
+        const totalCount = await BeerService.getCount()
         setTotalPages(getPageCount(totalCount, limit));
     });
 
@@ -35,7 +35,6 @@ function Home() {
     return (
         <div>
             <BeerFilter filter={filter} setFilter={setFilter} />
-
             {beerError && <h1>{`Произошла ошибка: ${beerError}`}</h1>}
             {isBeerLoading && (
                 <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>

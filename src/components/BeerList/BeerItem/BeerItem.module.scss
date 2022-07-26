@@ -1,0 +1,52 @@
+.beer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-top: 0;
+    border: 1px solid rgba(102, 138, 81, 0.842);
+    margin-top: 15px;
+    max-width: 90vw;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    .body {
+        max-width: 95%;
+    }
+
+    .image {
+        transform: rotate(-15deg);
+        transition: 0.5s;
+        img {
+            width: 30%;
+        }
+    }
+
+    .content {
+        width: 30%;
+        text-align: center;
+
+        h2 {
+            transition: 0.5s;
+            font-size: 25px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: #d9afd9;
+        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+        backface-visibility: hidden;
+        box-shadow: 0px 5px 21px 19px rgba(34, 60, 80, 0.2);
+
+        .image {
+            transform: rotate(15deg);
+            transition: 0.5s;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import Home from "../pages/Home";
-import BeerIdPage from "../pages/BeerIdPage";
+import BeerIdPage from "../pages/BeerIdPage/BeerIdPage";
 import NotFound from "../pages/NotFound";
 
 export const routes = [
