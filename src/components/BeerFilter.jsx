@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/style.scss";
 import MyInput from "./UI/input/MyInput";
-import MySelect from "./UI/select/MySelect";
 
 const BeerFilter = ({ filter, setFilter }) => {
     return (

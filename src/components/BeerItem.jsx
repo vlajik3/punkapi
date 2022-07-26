@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const BeerItem = ({ beer }) => {
     let navigate = useNavigate();
     return (
-        <div className="beer" onClick={() => navigate(`/beer/${beer.id}`)}>
+        <div className="beer" onClick={() => navigate(`${beer.id}`)}>
             <div className="beer__image">
                 <img src={beer.image_url} alt="beer_image" />
             </div>
@@ -12,7 +12,7 @@ const BeerItem = ({ beer }) => {
                 className="beer__content"
                 onClick={(e) => {
                     e.preventDefault();
-                    navigate(`/beer/${beer.id}`);
+                    navigate(`${beer.id}`);
                 }}
             >
                 <h2>{beer.name}</h2>
