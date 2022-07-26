@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/punkapi/static/css/main.30055bf8.css",
-    "main.js": "/punkapi/static/js/main.6b31d64c.js",
+    "main.css": "/punkapi/static/css/main.b6c96406.css",
+    "main.js": "/punkapi/static/js/main.5041cac7.js",
+    "static/media/404.jpg": "/punkapi/static/media/404.85b2e53e36f6d7700845.jpg",
     "index.html": "/punkapi/index.html",
-    "main.30055bf8.css.map": "/punkapi/static/css/main.30055bf8.css.map",
-    "main.6b31d64c.js.map": "/punkapi/static/js/main.6b31d64c.js.map"
+    "main.b6c96406.css.map": "/punkapi/static/css/main.b6c96406.css.map",
+    "main.5041cac7.js.map": "/punkapi/static/js/main.5041cac7.js.map"
   },
   "entrypoints": [
-    "static/css/main.30055bf8.css",
-    "static/js/main.6b31d64c.js"
+    "static/css/main.b6c96406.css",
+    "static/js/main.5041cac7.js"
   ]
 }
